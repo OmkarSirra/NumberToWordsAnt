@@ -1,20 +1,20 @@
-
+import java.util.Scanner;
 class NumbersToWordsClient {
 
-	static main(args) {
+	public static void main(String []args) {
 		NumbersToWordsClient numToWordsClient = new NumbersToWordsClient();
 		Scanner sc = new Scanner(System.in);
-		println "Enter a Integer to show up in words";
+		System.out.println("Enter a Integer to show up in words");
 		int num = sc.nextInt();
-		def numberInWords = numToWordsClient.convertNmberToWords(num);
-		println "numberInWords  : " + numberInWords;
+		String numberInWords = numToWordsClient.convertNmberToWords(num);
+		System.out.println("numberInWords  : " + numberInWords);
 	}
 	
-	def convertNmberToWords(int num)
+	String convertNmberToWords(int num)
 	{
 		if(num == 0)
 		return "Zero";
-		def wordInNum ="";
+		String wordInNum ="";
 		int digit = num/100;
 		if(digit >0)
 		{
@@ -127,7 +127,7 @@ class NumbersToWordsClient {
 		
 	}
 	
-	def digitToWord(int num)
+	String digitToWord(int num)
 	{
 		switch(num)
 		{
