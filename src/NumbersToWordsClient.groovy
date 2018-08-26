@@ -109,6 +109,11 @@ class NumbersToWordsClient {
 				wordInNum = wordInNum + " "+ "Twelve";
 				num = num%12;
 				} else
+				if(num>=11)
+				{
+				wordInNum = wordInNum + " "+ "Eleven";
+				num = num%12;
+				} else
 				if(num>=10)
 				{
 				wordInNum = wordInNum + " "+ "Ten";
